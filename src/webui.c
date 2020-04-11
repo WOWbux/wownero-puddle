@@ -88,7 +88,7 @@ send_json_stats(struct evhttp_request *req, void *arg)
             wa += 3;
             mh = miner_hr(wa);
             uint64_t balance = miner_balance(wa);
-            mb = (double) balance / 1000000000000.0;
+            mb = (double) balance / 100000000000.00;
         }
     }
 
