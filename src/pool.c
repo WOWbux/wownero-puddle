@@ -79,7 +79,7 @@ developers.
 #define CLIENT_JOBS_MAX 4
 #define BLOCK_HEADERS_MAX 4
 #define BLOCK_TEMPLATES_MAX 4
-#define MAINNET_ADDRESS_PREFIX 18
+#define MAINNET_ADDRESS_PREFIX 4146
 #define TESTNET_ADDRESS_PREFIX 53
 #define BLOCK_HEADERS_RANGE 10
 #define DB_SIZE 0x140000000 /* 5G */
@@ -87,7 +87,7 @@ developers.
 #define MAX_PATH 1024
 #define RPC_PATH "/json_rpc"
 #define ADDRESS_MAX 128
-#define BLOCK_TIME 120
+#define BLOCK_TIME 300
 #define HR_BLOCK_COUNT 5
 #define TEMLATE_HEIGHT_VARIANCE 5
 #define MAX_BAD_SHARES 5
@@ -1917,7 +1917,7 @@ cleanup:
 static int
 send_payments(void)
 {
-    uint64_t threshold = 1000000000000 * config.payment_threshold;
+    uint64_t threshold = 100000000000 * config.payment_threshold;
     int rc;
     char *err;
     MDB_txn *txn;
