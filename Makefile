@@ -61,7 +61,7 @@ MONERO_LIBS = \
   ${MONERO_BUILD_ROOT}/external/easylogging++/libeasylogging.a \
   ${MONERO_BUILD_ROOT}/src/libversion.a
 
-LIBRX = ${MONERO_BUILD_ROOT}/external/randomx/librandomx.a
+LIBRX = ${MONERO_BUILD_ROOT}/external/RandomWOW/librandomx.a
 
 DIRS = src data rxi/log/src
 
